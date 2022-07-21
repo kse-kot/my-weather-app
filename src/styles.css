@@ -1,0 +1,103 @@
+.not-existing-class-shows-font-use {
+	font-family: 'Anek Latin', sans-serif;
+	font-family: 'M PLUS Code Latin', sans-serif;
+	font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+	color: rgb(55, 8, 50);
+	font-family: 'Anek Latin', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+}
+
+h2 {
+	color: lightslategrey;
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
+}
+
+button {
+	background-color: rgb(0 123 255) !important;
+	color: white !important;
+	border-color: white !important;
+	box-shadow: 3px 2px 6px rgba(255, 255, 255, 0.7) !important;
+	transition: all 200ms ease-in-out;
+}
+
+button:hover {
+	background-color: white !important;
+	color: rgb(0 123 255) !important;
+	box-shadow: 3px 2px 6px rgba(0, 123, 255, 0.7) !important;
+}
+
+.main-card {
+	background-image: url('../images/sunny.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 27rem;
+}
+.main-card h5 {
+	color: #85586f;
+	font-weight: bolder;
+	font-size: 38px;
+	margin-bottom: 0;
+}
+
+.weather-day {
+	color: #ac7d88;
+	font-size: 28px;
+	font-style: italic;
+	font-family: 'Anek Latin', sans-serif;
+	font-weight: 400;
+}
+
+.other-card .weather-day {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.weather-detail {
+	color: #74006a;
+	font-weight: 400;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+}
+
+.weather-emoji {
+	float: right;
+	font-size: 42px;
+}
+
+.other-card {
+	background-color: #ffeeee;
+	height: 9rem;
+}
+
+.weather-degrees {
+	float: right;
+	font-size: 32px;
+	font-weight: 900;
+}
+
+.main-card .weather-degrees {
+	font-size: 40px;
+}
+
+.main-card .card-img {
+	height: 12rem;
+	width: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.search-city {
+	margin: 0 auto;
+}
+
+.inactive-scale {
+	color: #a75ba0;
+}
