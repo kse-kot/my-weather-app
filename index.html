@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/> -->
+		<link rel="stylesheet" href="src/bootstrap.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Source+Code+Pro:wght@300;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/styles.css" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="mt-5 mb-0">Weather Info App</h1>
+			<h2>Find out what wheather is now in any corner of the world!</h2>
+			<div class="row">
+				<div class="col">
+					<div class="card main-card">
+						<div class="card-body">
+							<h5 class="card-title">
+								<span id="weather-city">city</span>
+								<!-- <span class="weather-emoji">☀</span> -->
+							</h5>
+							<h6 class="weather-day" id="weather-date">Today</h6>
+							<div class="row">
+								<div class="col-6 weather-detail">
+									<span
+										id="temperature-value"
+										data-scale="celcius"
+										>temperature-value</span
+									>
+									<span id="celcius-link">°C</span>
+								</div>
+								<div class="col-6 weather-detail">
+									humidity:
+									<span id="weather-humidity"></span>
+								</div>
+								<div
+									class="col-6 weather-detail"
+									id="weather-description"
+								>
+									weather-description
+								</div>
+								<div class="col-6 weather-detail">
+									wind speed:
+									<span id="weather-wind-speed"></span>
+								</div>
+							</div>
+							<!-- <div class="card-text">
+								<span class="weather-description"
+									>blazing sun</span
+								>
+								<span class="weather-degrees">
+									<span
+										id="temperature-value"
+										data-scale="celcius"
+									>
+										28
+									</span>
+									<span id="celcius-link">°C</span>
+									 |
+									<span
+										id="farenheit-link"
+										class="inactive-scale"
+										>°F</span
+									>
+								</span>
+							</div> -->
+							<div class="row"></div>
+						</div>
+						<div class="card-footer">
+							<form class="search-city">
+								<div class="input-group">
+									<input
+										type="search"
+										class="form-control rounded"
+										placeholder="Please enter a city name 🙂"
+										aria-label="Search"
+										aria-describedby="search-addon"
+										id="weather-input-search"
+									/>
+									<button
+										id="weather-button-search"
+										type="submit"
+										class="btn btn-outline-primary"
+									>
+										search
+									</button>
+									<button
+										id="weather-show-current"
+										type="button"
+										class="btn btn-outline-primary"
+									>
+										current
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="src/index.js"></script>
+	</body>
+</html>
